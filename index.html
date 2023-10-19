@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditya Gaikwad Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(0, 0, 45);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100px;
+            background-color: rgb(26, 26, 87);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(120, 255, 210);
+            font-size: 1.04rem;
+        }
+
+        nav ul li::after {
+            content: '';
+            width: 0%;
+            height: 2px;
+            background: #f44336;
+            display: block;
+            margin: auto;
+            transition: 0.5s;
+        }
+
+        nav ul li:hover::after {
+            width: 100%;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .first {
+            display: flex;
+            justify-content: space-around;
+            margin: 80px 0;
+            align-items: center;
+        }
+
+        .first>div {
+            width: 30%;
+        }
+
+        .leftsection {
+            font-size: 2.5rem;
+
+        }
+
+        .rightsection img {
+            width: 100%;
+        }
+
+        .purple {
+            color: coral;
+        }
+
+        .gray {
+            color: gray;
+        }
+
+        #element {
+            color: rgb(120, 255, 210);
+        }
+
+        .second {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        main hr {
+            margin-bottom: 23px;
+            border: 0;
+            background: rgb(255, 156, 57);
+            height: 5px;
+        }
+
+        .second h1 {
+            font-size: 1.5rem;
+        }
+
+        .second .box {
+            background: white;
+            width: 79vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+
+        .second .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 120px;
+        }
+
+        .image-top {
+            width: 37px;
+            position: relative;
+            top: -45px;
+            left: -17px;
+        }
+
+        .vertical-title {
+            position: relative;
+            top: 75px;
+            width: 150px;
+            margin-left: -58px;
+
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 86px;
+            color: gray;
+            width: 150px;
+            font-size: 9px;
+            margin-left: -58px;
+        }
+
+
+        .third {
+            margin: 50px 100px;
+            position: relative;
+            height: 80vh;
+        }
+
+        .services {
+            font-size: 1.5rem;
+            color: crimson;
+        }
+
+        .footer {
+            background-color: deepskyblue;
+            margin-bottom: 0;
+        }
+
+        .footer {
+            display: flex;
+            height: 40vh;
+            justify-content: space-evenly;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Aditya's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="first">
+            <div class="leftsection">
+                Hi, My name is <span class="purple">Aditya</span>
+                <div>
+                    and I'm a passionate <div>Computer Engineer.</div>
+                    <span id="element"></span>
+                </div>
+            </div>
+            <div class="rightsection">
+                <img src="images/lg.jpg">
+            </div>
+        </section>
+
+        <section class="second">
+            <hr>
+            <span class="gray">What have I done so far ?</span>
+            <h1>Past Experience</h1>
+            <div class="box">
+
+                <div class="vertical">
+                    <img src="images/download.jpeg" alt="" class="image-top">
+                    <div class="vertical-title">
+                        12 STD (2019 - 2021)
+                    </div>
+                    <div class="vertical-desc">
+                        S.V Union High School and Junior College Pune.
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <img src="images/ghrcem.png" alt="" class="image-top">
+                    <div class="vertical-title">
+                        Degree Aspirant (2022 - 2023)
+                    </div>
+                    <div class="vertical-desc">
+                      Pursuing my BTECH degree from G.H Raisoni College of Engineering and Management Pune.
+                    </div> 
+                </div>
+
+                <div class="vertical">
+                    <img src="images/db.png" alt="" class="image-top">
+                    <div class="vertical-title">
+                        HTML Developer (2021 - 2023)
+                    </div>
+                    <div class="vertical-desc">
+                        Passionate Web Developer.
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <img src="images/java.png" alt="" class="image-top">
+                    <div class="vertical-title">
+                        Java Developer(Beginner) (2022 - 2023)
+                    </div>
+                    <div class="vertical-desc">
+                     I am Java Beginner.  
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <img src="images/data.png" alt="" class="image-top">
+                    <div class="vertical-title">
+                        Data Structures and Algorithm.
+                    </div>
+                    <div class="vertical-desc">
+                        I have learnt DSA in my academics,studied algorithms, problem solving.
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="third">
+            <hr>
+            <div>What kind of services do I provide ?</div>
+            <div class="services">
+                Services
+            </div>
+        </section>
+    </main>
+    
+    <footer class="footer">
+        <div class="first"><h2>Portfolio</h2></div>
+        <div class="second">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/">About</a></li>
+                <li><a href="/">Services</a></li>
+                <li><a href="/">Projects</a></li>
+                <li><a href="/">Contact Me</a></li>
+            </ul>
+        </div>
+        <div class="third">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/">About</a></li>
+                <li><a href="/">Services</a></li>
+                <li><a href="/">Projects</a></li>
+                <li><a href="/">Contact Me</a></li>
+            </ul>
+        </div>
+        <div class="fourth">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/">About</a></li>
+                <li><a href="/">Services</a></li>
+                <li><a href="/">Projects</a></li>
+                <li><a href="/">Contact Me</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Data Scientist', 'Web Developer', 'Software Developer', 'Graphic Designer'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
